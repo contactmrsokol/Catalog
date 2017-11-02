@@ -1,0 +1,26 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', 
+	filename='styles.css') }}">
+</head>
+
+<body>
+
+<h1><a href="{{url_for('Categories')}}">CATALOG APP</a></h1>
+<h2><a href= "{{url_for('categoryItems', category_id=item_description[0].category_id)}}">{{item_description[0].category.name}}</a></h2>
+
+
+
+<div>
+<h3>{{item_description[0].name}}</h3>
+<p>{{item_description[0].description}}</p>
+</br>
+</br>
+</br>
+
+</div>
+
+
+</body>
+
+</html>
